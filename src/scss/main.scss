@@ -1,0 +1,206 @@
+/* Blocks */
+
+@import "./base/reset";
+@import "./swiper/swiper-bundle.min.scss";
+@import "./base/variables";
+@import "./fonts/fonts";
+
+
+body {
+
+   font-family: "Heebo";
+   font-weight: 700;
+   font-size: 30px;
+   text-transform: uppercase;
+   color: $color_white;
+   background-color: $color_bg_gray;
+}
+
+.container {
+   max-width: 1856px;
+   margin: 0 auto;
+   padding: 0 30px;
+
+   @media(max-width: 500px) {
+      padding: 0 10px;
+   }
+}
+
+.decor-txt {
+   text-transform: uppercase;
+   font-family: "Yantramanav";
+   font-size: 112px;
+   letter-spacing: 1.7px;
+   color: $color_bg_gray;
+   text-shadow:
+      -0 -1px 0 #404040,
+      0 -1px 0 #404040,
+      -0 1px 0 #404040,
+      0 1px 0 #404040,
+      -1px -0 0 #404040,
+      1px -0 0 #404040,
+      -1px 0 0 #404040,
+      1px 0 0 #404040,
+      -1px -1px 0 #404040,
+      1px -1px 0 #404040,
+      -1px 1px 0 #404040,
+      1px 1px 0 #404040,
+      -1px -1px 0 #404040,
+      1px -1px 0 #404040,
+      -1px 1px 0 #404040,
+      1px 1px 0 #404040;
+
+   @media(max-width: 600px) {
+      display: none;
+   }
+
+   p {
+      color: $color_bg_gray;
+      position: relative;
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 26px;
+         height: 26px;
+         background-image: url('../img/plus.svg');
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover;
+      }
+   }
+
+   @media(max-width:500px) {
+      font-size: 76px;
+   }
+}
+
+.title-decor {
+   font-size: 40px;
+   display: inline-block;
+   position: relative;
+   z-index: 10;
+
+   @media(max-width: 400px) {
+      font-size: 30px;
+   }
+
+   &::before {
+      content: "look";
+      position: absolute;
+      z-index: -1;
+      text-transform: uppercase;
+      font-family: "Yantramanav";
+      font-size: 112px;
+      letter-spacing: 6px;
+      color: $color_bg_gray;
+      text-shadow:
+         -0 -1px 0 #404040,
+         0 -1px 0 #404040,
+         -0 1px 0 #404040,
+         0 1px 0 #404040,
+         -1px -0 0 #404040,
+         1px -0 0 #404040,
+         -1px 0 0 #404040,
+         1px 0 0 #404040,
+         -1px -1px 0 #404040,
+         1px -1px 0 #404040,
+         -1px 1px 0 #404040,
+         1px 1px 0 #404040,
+         -1px -1px 0 #404040,
+         1px -1px 0 #404040,
+         -1px 1px 0 #404040,
+         1px 1px 0 #404040;
+
+      @media(max-width:600px) {
+         display: none;
+      }
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 40px;
+      background-image: url("../img/plus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @media(max-width: 600px) {
+         display: none;
+      }
+   }
+}
+
+.subtitle__text {
+   font-size: 20px;
+   font-weight: 300;
+   padding-top: 10px;
+
+   @media(max-width: 400px) {
+      font-size: 14px;
+   }
+}
+
+.swiper-wrapper {
+   box-sizing: content-box;
+}
+
+.btn {
+   border: 1px solid #fff;
+   border-radius: 30px;
+   font-size: 13px;
+   letter-spacing: 1.3px;
+   color: #fff;
+   padding: 16px 80px 16px 30px;
+   background-color: transparent;
+   position: relative;
+
+   &:hover.btn::before {
+      transform: rotate(90deg);
+      transition: all .6s;
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      width: 52px;
+      height: 52px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      background-image: url("../img/arrow-small.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      right: 0;
+      top: 0;
+      transition: all .6s;
+   }
+}
+
+.form__item {
+
+   border-radius: 30px;
+   padding: 14px 0 14px 25px;
+   border: 1px solid #404040;
+   color: #C4C4C4;
+   font-size: 16px;
+   font-weight: 300;
+   letter-spacing: 0.8px;
+}
+
+.inform__txt {
+   color: #C4C4C4;
+   font-size: 16px;
+   font-weight: 300;
+   letter-spacing: 0.8px;
+   line-height: 175%;
+   /* 28px*/
+   text-transform: capitalize;
+}
+
+@import "./blocks/*.scss";
+
+.swiper-wrapper {
+   box-sizing: content-box;
+}

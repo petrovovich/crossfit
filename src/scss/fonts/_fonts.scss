@@ -1,0 +1,43 @@
+@font-face {
+   font-family: "Heebo";
+   font-style: normal;
+   font-weight: 300;
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("Heebo"),
+      /* Если не получилось, загрузит woff2 */
+      url("/fonts/Heebo-Light.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */
+      url("/fonts/Heebo-Light.woff") format("woff"),
+      /* Если браузер не поддерживает ttf, загрузит ttf */
+      url("/fonts/Heebo-Light.ttf") format("ttf");
+
+}
+
+@font-face {
+   font-family: "Heebo";
+   font-style: normal;
+   font-weight: 700;
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("Heebo"),
+      /* Если не получилось, загрузит woff2 */
+      url("/fonts/Heebo-Bold.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */
+      url("/fonts/Heebo-Bold.woff") format("woff"),
+      /* Если браузер не поддерживает ttf, загрузит ttf */
+      url("/fonts/Heebo-Bold.ttf") format("ttf");
+}
+
+@font-face {
+   font-family: "Yantramanav";
+   font-style: normal;
+   font-weight: 500;
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("Yantramanav"),
+      /* Если не получилось, загрузит woff2 */
+      url("/fonts/Yantramanav-Bold.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */
+      url("/fonts/Yantramanav-Bold.woff") format("woff"),
+      /* Если браузер не поддерживает ttf, загрузит ttf */
+      url("/fonts/Yantramanav-Bold.ttf") format("ttf");
+
+}

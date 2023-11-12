@@ -1,0 +1,314 @@
+.shop {
+   padding: 130px 10px 50px 10px;
+
+   @media(max-width: 600px) {
+      padding: 80px 10px 50px 10px;
+   }
+}
+
+.shop-title__wrap {
+   max-width: 840px;
+   margin: 0 auto;
+   text-align: center;
+
+   @media(max-width:1280px) {
+      max-width: 525px;
+   }
+
+   .title-decor {
+      font-size: 60px;
+
+      @media(max-width: 600px) {
+         font-size: 40px;
+      }
+
+      &::before {
+         content: "part";
+         top: -80px;
+         left: 210px;
+         font-size: 180px;
+
+         @media(max-width: 1280px) {
+            left: 66px;
+         }
+
+         @media(max-width: 600px) {
+            font-size: 110px;
+            top: -45px;
+            left: 20px;
+         }
+      }
+
+      &::after {
+         left: -30px;
+         top: 5px;
+
+         @media(max-width: 600px) {
+            left: -25px;
+         }
+      }
+   }
+}
+
+.shop-slider {
+   position: relative;
+   margin: 60px auto 0 auto;
+   max-width: 1920px;
+
+   @media(max-width:800px) {
+      max-width: 1920px;
+   }
+
+}
+
+
+.shop-swiper {
+   width: 100%;
+   height: auto;
+   box-sizing: content-box;
+   position: relative;
+   overflow: hidden;
+
+   img {
+      display: block;
+      width: 100%;
+      height: 479px;
+      object-fit: cover;
+
+      @media(max-height: 700px) {
+         height: 320px;
+      }
+   }
+
+   .swiper-slide {
+      height: 479px;
+
+      @media(max-width:600px) {
+         height: auto;
+      }
+   }
+
+   .shop-slide1 {
+      width: 414px;
+   }
+
+   .shop-slide2 {
+      width: 744px;
+   }
+
+   .shop-slide3 {
+      width: 396px;
+   }
+
+   .shop-slide4 {
+      width: 396px;
+   }
+}
+
+.shop-calc {
+   padding: 60px 0 0 0;
+   max-width: 1280px;
+   margin: 0 auto;
+   display: flex;
+   gap: 35px;
+
+   @media(max-width: 1600px) {
+      gap: 15px;
+   }
+
+   @media(max-width: 1280px) {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+
+}
+
+.shop-data__wrap {
+   max-width: 630px;
+   padding: 80px 0 100px 0;
+
+   @media(max-width: 800px) {
+      max-width: 100%;
+      padding: 80px 0 0 0;
+   }
+}
+
+.shop-data__title {
+   max-width: 400px;
+
+   @media(max-width: 1280px) {
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .title-decor {
+      padding: 0 0 0 30px;
+   }
+
+   .inform__txt {
+      margin: 17px 0 37px 0;
+   }
+
+   .title-decor {
+      &::before {
+         content: "bmi";
+         top: -50px;
+         left: -75px;
+
+         @media(max-width:1600px) {
+            left: -3px;
+         }
+      }
+
+      &::after {
+         left: -35px;
+
+         @media(max-width:1600px) {
+            left: 5px;
+         }
+      }
+   }
+}
+
+.shop-form {
+   width: 627px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: 'heigth age' 'weigth gender' 'select select' 'shop-form__btn shop-form__btn ';
+   gap: 18px 30px;
+
+   @media(max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'heigth ' 'age' 'weigth' 'gender' 'select ' 'shop-form__btn ';
+      width: 100%;
+   }
+
+   input[type="number"]::-webkit-inner-spin-button {
+      display: none;
+   }
+
+   .heigth {
+      grid-area: heigth;
+   }
+
+   .age {
+      grid-area: age;
+   }
+
+   .weigth {
+      grid-area: weigth;
+   }
+
+   .gender {
+      grid-area: gender;
+   }
+
+   .select {
+      grid-area: select;
+   }
+
+   .shop-input__wrap {
+      display: inline-block;
+      width: 195px;
+      position: relative;
+      cursor: pointer;
+   }
+
+   .shop-form__btn {
+      width: 100%;
+      cursor: pointer;
+      grid-area: shop-form__btn;
+   }
+}
+
+.shop-rezult__wrap {
+   width: 610px;
+   height: 610px;
+   background-color: $color_black;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 30px;
+
+   @media(max-width: 700px) {
+      width: 100%;
+      height: auto;
+      background-color: transparent;
+      border-radius: none;
+
+   }
+}
+
+.shop-table {
+   max-width: 398px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.shop-table__row {
+   display: flex;
+
+   .bmi__title {
+      font-size: 16px;
+      padding: 17px 0 21px 0;
+   }
+
+   .status__title {
+      font-size: 16px;
+      padding: 17px 0 21px 0;
+   }
+
+   .bmi {
+      width: 184px;
+      border-right: 1px solid #707070;
+      border-bottom: 1px solid #707070;
+      padding: 15px 0;
+
+      @media(max-width: 400px) {
+         width: 135px;
+      }
+   }
+
+   .status {
+      width: 215px;
+      border-bottom: 1px solid #707070;
+      padding: 15px 0 0 31px;
+
+      @media(max-width: 400px) {
+         width: 135px;
+         padding: 15px 0 0 10px
+      }
+   }
+
+   .bmi-data__bottom {
+      border-bottom: none;
+      position: relative;
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 70%;
+         height: 1px;
+         background-color: #707070;
+         bottom: 0;
+         right: 0;
+      }
+   }
+}
+
+.shop-table__inform {
+   margin-top: 33px;
+
+   @media(max-width: 400px) {
+      width: 273px;
+      text-align: center;
+   }
+
+   span {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $color_white;
+   }
+}

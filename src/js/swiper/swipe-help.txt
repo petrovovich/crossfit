@@ -1,0 +1,92 @@
+// // 
+// // function startSwiper() {
+
+// //    return swiper;
+// // }
+
+// // startSwiper();
+
+// const swiperImg = new Swiper('.swiper-img', {
+//    // Optional parameters
+//    // direction: 'horizontal',
+//    loop: true,
+
+
+
+//    // навигация
+//    // Булеты,текущее положениеб,прогресс бар
+//    pagination: {
+//       el: '.swiper-pagination',
+//       // clickable: true,// Булеты
+//       // dynamicBullets: true, // Динамические булеты
+//       type: 'progressbar', // прогресс пргокрутки
+//    },
+
+//    // стрелки
+//    navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//    },
+
+//    // скролл
+//    scrollbar: {
+//       el: '.swiper-scrollbar',
+//       draggable: true, // возможность перетаскивать скролл
+//    },
+
+
+
+
+//    // управление клавиатурой
+//    Keyboard: {
+//       enabled: true, // вкючить/выключить 
+//       onlyInViewport: true, // вкючить/выключить когда слайдер в приделах вьюпорта
+//       pageUpDown: true, // вкючить/выключить управление клавиатурой
+
+//    },
+
+//    //авто прокрутка
+//    autoplay: {
+//       delay: 1000, // пауза между прокрутками
+//       stopOnLastSlide: true, // закончить на последним слайде
+//       disableOnInteraction: false, // отключить после ручного переключения
+//    },
+
+//    // включение / отключение
+//    simulateTouch: true, // перетаскивание на пк
+//    touchRatio: 1, // чувствительность свайпа
+//    touchAngle: 45, // угол срабатывания свойства
+//    grabCursor: true, // курсор перетаскивания 
+//    speed: 500, // скорость пеключения слайдов
+
+//    // autoHeight: true,// автовысота
+
+//    // slidesPerView: 2,// кол-во слайдов для показа
+
+//    // cpaceBeetween: 30, // отступ между слайдами
+
+//    // slidesPerGroup: 3, // кол-во пролистываемых слайдов
+
+//    // centeredSlides: true, // активный слайд по центру
+
+//    // loop: true, // бесконечный слайдер
+
+
+//    // брейкпоинты
+//    // breakpoints: {
+//    //    320: {
+//    //       slidesPerView: 1,
+//    //    },
+//    //    480: {
+//    //       slidesPerView: 2,
+//    //    },
+//    //    990: {
+//    //       slidesPerView: 3,
+//    //    }
+//    // }
+
+//    // взаимодействие двух слайдеров
+
+
+
+// });

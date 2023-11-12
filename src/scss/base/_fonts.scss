@@ -1,0 +1,29 @@
+// fonts
+@font-face {
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 500;
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("Inter"),
+      /* Если не получилось, загрузит woff2 */
+      url("/fonts/Inter-Medium.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */
+      url("/fonts/Inter-Medium.woff") format("woff"),
+      /* Если браузер не поддерживает ttf, загрузит ttf */
+      url("/fonts/Inter-Medium.ttf") format("ttf");
+
+}
+
+@font-face {
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 700;
+   /* Браузер сначала попробует найти шрифт локально */
+   src: local("Inter"),
+      /* Если не получилось, загрузит woff2 */
+      url("/fonts/Inter-Bold.woff2") format("woff2"),
+      /* Если браузер не поддерживает woff2, загрузит woff */
+      url("/fonts/Inter-Bold.woff") format("woff"),
+      /* Если браузер не поддерживает ttf, загрузит ttf */
+      url("/fonts/Inter-Bold.ttf") format("ttf");
+}
